@@ -1,0 +1,27 @@
+GET http://localhost:5000/borrowing
+
+###
+GET http://localhost:5000/borrowing/3
+
+###
+POST http://localhost:5000/borrowing
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "bookId": 4,
+    "borrowFor": "2",
+    "status": "Pending"
+}
+
+###
+PATCH http://localhost:5000/borrowing/3
+Content-Type: application/json
+
+{
+    "borrowFor": "2",
+    "status": "returned"
+}
+
+###
+DELETE http://localhost:5000/borrowing/2

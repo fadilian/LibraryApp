@@ -1,0 +1,29 @@
+GET http://localhost:5000/user
+
+###
+GET http://localhost:5000/user/1
+
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "name": "Fadil",
+    "email": "fadil@gmail.com",
+    "gender": "Male",
+    "telp": "087701514226"
+}
+
+###
+PATCH  http://localhost:5000/user/1
+Content-Type: application/json
+
+{
+    "name": "Shalma",
+    "email": "shalma@gmail.com",
+    "gender": "Female",
+    "telp": "088785438457"
+}
+
+###
+DELETE   http://localhost:5000/user/2
